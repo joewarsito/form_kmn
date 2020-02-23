@@ -1,0 +1,1 @@
+[ "rotation" => [ ["text"=> "CW", "value" => "cw" ],[ "text" => "CCW", "value" => "cc" ] ] ]
