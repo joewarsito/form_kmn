@@ -1,0 +1,123 @@
+<table class="table">
+  <tr>
+    <td>
+      Marker Jam 9-3
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Pasien terlentang dalam TA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      A &amp; antisepsik
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>
+      Marking kornea
+    </td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>
+      Pasang suction ring
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Microkeratom -&gt; buat flap
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Buka flap -&gt; IR OD:
+      <input type="text" class="form-control" v-model="value.od" />
+      <label>CW :</label>
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.ccw"
+        name="ccw"
+      >
+        <b-form-radio
+          v-for="opt in params.rotation"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+      <!-- CW:
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.bukaFlap"
+        name="bukaFlap"
+      >
+        <b-form-radio
+          v-for="opt in params.cw"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+      CC:
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.bukaFlap"
+        name="bukaFlap"
+      >
+        <b-form-radio
+          v-for="opt in params.cc"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group> -->
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Aplikasi Laser
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tutup flap -&gt; Aposisi tepat
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tetes cendo fenicol
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Bandage Lens :</label>
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.bandageLens"
+        name="bandageLens"
+      >
+        <b-form-radio
+          v-for="opt in params.yesNo"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tanggal pasang :
+      <date-picker
+        v-model="value.tanggalPasang"
+        format="DD/MM/YYYY"
+        type="date"
+        value-type="date"
+        placeholder="DD/MM/YYYY"
+      ></date-picker>
+    </td>
+  </tr>
+</table>
