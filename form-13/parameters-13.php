@@ -1,0 +1,1 @@
+[ "injeksiCefuroxime" => [ ["text"=> "Yes", "value" => "Yes" ],[ "text" => "No", "value" => "No" ] ], "yesNo" => [ ["text"=> "Yes", "value" => "Yes" ],[ "text" => "No", "value" => "No" ] ] ]

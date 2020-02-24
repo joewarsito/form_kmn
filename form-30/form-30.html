@@ -1,0 +1,84 @@
+<table class="table">
+  <tr>
+    <td>
+      A &amp; antiseptik daerah operasi
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Marking daerah lipatan kelopak
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Injeksi anestesi subkutis
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Insisi kulit, undermine sampai permukaan tarsus dan dilanjutkan hingga
+      Ã‚Â± 2 mm dari tepi margo
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Perdarahan dirawat
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Jahit kulit-tarsus-kulit 2 mm di atas margo bentuk U dengan vicryl 6.0
+      sebanyak 3 jahitan hingga arah - Buat lipatan kelopak dengan menjahit
+      vertical kulit-tarsus-kulit dengan prolene 7.0 sebanyak 3
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Jahit kulit dengan prolene 7.0
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Bethadine, antibiotik salep
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Verband/sterilstrip
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Bandage Lens :</label>
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.bandageLens"
+        name="bandageLens"
+      >
+        <b-form-radio
+          v-for="opt in params.yesNo"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tanggal pasang :
+      <date-picker
+        v-model="value.tanggalPasang"
+        format="DD/MM/YYYY"
+        type="date"
+        value-type="date"
+        placeholder="DD/MM/YYYY"
+      ></date-picker>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Operasi selesai
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,113 @@
+<table class="table">
+  <tr>
+    <td>
+      Pasien Telentang dalam GA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      A dan Antiseptic
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Incision cornea
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Viscoelastic di masukkan kedalam COA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Masukkan IOL ke dlm COA &amp; di centralkan
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Enclavasi haptic ke iris di jam 3 &amp; 9
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Keluarkan Visco dengan Hidrodisecsi
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Jahit dengan Nilon 10.0
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Iridektomi
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Miostat
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Isi COA
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Injeksi Cefuroxime 0,1 ml :</label>
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.injeksiCefuroxime"
+        name="injeksiCefuroxime"
+      >
+        <b-form-radio
+          v-for="opt in params.yesNo"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Seidel Test / Test Kebocoran
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tetes Tobroson
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>Bandage Lens :</label>
+      <b-form-radio-group
+        id="radio-group-spectacle-type"
+        v-model="value.bandageLens"
+        name="bandageLens"
+      >
+        <b-form-radio
+          v-for="opt in params.yesNo"
+          :key="opt.value"
+          :value="opt.value"
+          >{{ opt.text }}</b-form-radio
+        >
+      </b-form-radio-group>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Tanggal pasang :
+      <date-picker
+        v-model="value.tanggalPasang"
+        format="DD/MM/YYYY"
+        type="date"
+        value-type="date"
+        placeholder="DD/MM/YYYY"
+      ></date-picker>
+    </td>
+  </tr>
+</table>

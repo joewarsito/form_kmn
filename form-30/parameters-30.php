@@ -1,0 +1,1 @@
+[ "yesNo" => [ ["text"=> "Yes", "value" => "Yes" ],[ "text" => "No", "value" => "No" ] ] ]
